@@ -27,6 +27,42 @@ if(7<5){
 } else{
     console.log("ding ding ding");
 }
+/*
+let testNumber = 6;
+if(testNumber > 5){
+    console.log(`${testNumber} is greater than 5`);
+} else{
+    if(testNumber < 5){
+        console.log(`${testNumber} is less than 5`);
+    } else{
+        console.log(`${testNumber} is equal to 5`);
+    }
+*/
+// This sucks because its nested and take way too much space
+// Use else if
+let testNumber = 5;
+if(testNumber > 5){
+    console.log(`${testNumber} is greater than 5`);
+} else if(testNumber < 5){
+    console.log(`${testNumber} is less than 5`);
+} else{
+    console.log(`${testNumber} is equal to 5`)
+}
 
-let testNumber = 6
-if(testNumber > 5){}
+//0-59: F
+// 60-69: D
+// 70-79: C
+//80-89: B
+// 90-100: A
+let testGrade = 85
+if(testGrade < 59){
+    console.log("You got an F :(");
+} else if(testGrade < 70){
+    console.log("You got a D :(");
+} else if(testGrade < 80){
+    console.log("You got a C");
+} else if(testGrade < 90){
+    console.log("You got a B");
+} else{
+    console.log("You got an A! :)");
+}
