@@ -66,3 +66,36 @@ if(testGrade < 59){
 } else{
     console.log("You got an A! :)");
 }
+
+// Logical Operators
+// They allow you to modify or combine multiple logic statements
+// AND: && , only when both statements are true
+// OR: || , when one of the two statements are true
+// NOT: ! , flips true/false value
+
+//clothing selector based on weather
+let temperature = 44;
+let percipitation = true;
+
+// T-shirt and shorts (above 75). T-shirt and pants (between 60 and 75)
+// Long sleeve shirt and pants (above 45) Sweatshirt and pants (colder than 45
+// jacket instead of shirt if precipitation
+if(percipitation == true){
+    if(temperature >= 75){
+        console.log("You should wear a Jacket with Shorts.")
+    }else if(temperature >= 60){
+        console.log("You should wear a Jacket with Pants.")
+    }else if(temperature >= 45){
+        console.log("You should wear a Jacket with Pants.")
+    }else{
+        console.log("You should wear a Jacket with Pants")
+    }
+}else if(temperature >= 75){
+    console.log("You should wear a T-Shirt with Shorts.")
+}else if(temperature >= 60){
+    console.log("You should wear a T-Shirt with Pants.")
+}else if(temperature >= 45){
+    console.log("You should wear a Long Sleeve Shirt with Pants.")
+}else{
+    console.log("You should wear a Sweatshirt with Pants")
+}
