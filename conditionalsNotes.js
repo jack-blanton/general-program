@@ -99,3 +99,97 @@ if(percipitation == true){
 }else{
     console.log("You should wear a Sweatshirt with Pants")
 }
+// javascript uses truthy and falsy values
+// truthy value is treated like a "true" boolean
+// the following are truthy
+//  true
+//  any non-empty string
+//  any number other than 0
+//  arrays
+//  functions
+//  objects
+
+// the following are falsy:
+//  false
+//  0 or 0n (bigint)
+//  empty strings
+//  null
+//  undefined
+//  NaN
+
+// if you put any of these in a if("awaawfa") statement they'll read truthy or falsy and run that way
+
+// OR finds the first truthy value
+let testValue = null || 1 || false;
+if(testValue){
+    console.log("whaddahellbrah");
+}
+// if there's no truthy values, it prints the last
+// && finds the first falsy value
+// && has higher priority than or 
+// a && b || c && d == (a and b) or (c and d)
+// you can use parenthesis to specify which -> (a || b) && (c || d)
+// DO NOT use && instead of if because it is brain dead and hard to read
+
+// You can use Boolean(); and ! to turn things into boolean
+// A switch can be a better alternative to a massive amount of if else statements
+/* structure
+switch(expression) {
+    case x:
+            code goes here
+            break;
+    case y: 
+            code goes here
+            break;
+    case z:
+            code goes here
+            break;
+    default:
+            code goes here
+            doesnt need break
+}
+The switch expression is evaluated
+The value of the expression is compared with the values of each case
+If there is a match, the associated block of code is executed
+If there is no match,the default case is executed
+*/
+// The getDay() method returns the number between 0 and 6
+// A switch can be used to turn this output into a day
+let day = undefined
+switch(new Date().getDay()) {
+case 0: 
+    day = "sunday";
+    break;
+case 1:
+    day = "monday";
+    break;
+case 2:
+    day = "tuesday";
+    break;
+case 3:
+    day = "wednesday";
+    break;
+case 4:
+    day = "thursday";
+    break;
+case 5:
+    day = "friday";
+    break;
+case 6:
+    day = "saturday";
+    break;
+default:
+    console.log("Not a date");
+}
+console.log(day);
+
+let age = 13
+if(age>=14 && age<=90){
+    console.log("1")
+};
+if(age<14 || age>90){
+console.log("2")
+};
+if(!(age>=14 && age<=90)){
+    console.log("3")
+};
