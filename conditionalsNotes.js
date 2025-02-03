@@ -18,12 +18,12 @@ and then so on and so on
 Greater = later in alphabet and capitals
 */
 if(3 < 5){
-    console.log("rizz");
+    console.log("awesome sauce");
 }
 // If statements allow you to gate codes behind conditions being true
 // Other things do this but also allow you to accomplish other things like else and elif
 if(7<5){
-    console.log("you wrong buh!");
+    console.log("you wrong bruh!");
 } else{
     console.log("ding ding ding");
 }
@@ -193,3 +193,7 @@ console.log("2")
 if(!(age>=14 && age<=90)){
     console.log("3")
 };
+// The Ternary Operator allows you to write simple and concise if/else statements
+
+//The syntax for this is
+// condition ? do this : else do this instead
