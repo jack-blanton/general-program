@@ -10,32 +10,7 @@
 
 <h1 id="c", style="text-align:center; font-size:400%">0</h1>
 <h1 id="d", style="text-align:center; font-size:300%"></h1>
-<script> 
-let cookies = 0;
-let gained = 1;
-let cps = 0;
-function clicksPerSecond(){
-        cookies = cookies + (cps);
-        document.getElementById("c").innerHTML = cookies;
-        return;
-}
-function cpsIncreased(add, mult, flat){
-        cps = (cps + flat) * mult + add;
-        document.getElementById("d").innerHTML = "cps: " + cps;
-        return;
-}
-function cookieGained(c,g) {
-        cookies = c + g;
-        document.getElementById("c").innerHTML = cookies;
-        console.log(cookies)
-        return;
-}
-function gainIncreased(gain,flat,mult,add){
-        gained = (gain + flat)*mult + add;
-        return;
-}
-setInterval((clicksPerSecond), 1000);
-</script>
+<script src="clicker.js"></script>
 <button style="font-size:400%;margin-left: 605px;" onclick= "cookieGained(cookies,gained)"> click</button>
 <button onclick="gainIncreased(gained,1,1,0)">Click Power</button>
 <button onclick="cpsIncreased(1,1,0)">CPS</button>
