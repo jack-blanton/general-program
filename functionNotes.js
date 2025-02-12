@@ -40,3 +40,61 @@ function greeting(name = "Jack"){
 greeting()
 greeting("Jon")
 // its like a preset
+
+
+// anonymous funtions used if a function expects to take another function as a parameter
+// function doesnt have a function name
+
+
+// doesnt do anything because its not actually called
+/*
+function logKey(event) {
+    console.log(`You pressed the "${event.key}"`)
+}
+
+this.addEventListener("keydown", logKey);
+this is how we would normally do this
+*/
+// this.addEventListener("keydown", function (event) {
+//     console.log(`You pressed ${event.key}`);
+// });
+
+//Another way to create anonymous function is arrow function syntax
+// this.addEventListener("keydown", (event)=>{
+//     console.log(`You pressed ${event.key}`);
+// })
+
+// scope
+// let x = 1;
+
+// function a() {
+//     let y = 2;
+//     output(y);
+//  }
+
+//  function b() {
+//         let z = 5;
+//         output(z);
+//     }
+
+// function output(value){
+//     console.log(`Value = ${value}`);
+// }
+
+
+// output(x);
+// a();
+// b();
+// output(y);
+// output(z);
+// functions can have return values which it returns to a global scope
+
+function randomLessThan(num){
+    let x = Math.floor(Math.random() * num)
+    return x;
+}
+// This is 1-4 because its usually 0-3!
+console.log(randomLessThan(4)+1)
+
+// if you want a function to interact with something else usually you'll need a return value!
+ 
