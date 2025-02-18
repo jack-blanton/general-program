@@ -69,3 +69,9 @@ for (let i = 0; i < 21; i++){
     }
     console.log(i);
 }
+// Three kinds of loops
+// For, While, Do While
+
+// Do While loop does it at least once
+// break ejects loop
+// continue skips the rest of the current loop
