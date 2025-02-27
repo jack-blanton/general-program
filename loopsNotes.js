@@ -147,3 +147,69 @@ for(let i = 0; i < fruits.length; i++){
 for (let fruit of fruits) {
     console.log(fruit);
 }
+
+// Methods are functions tied to a datatype
+// Array.pop is a method
+// If it doesn't have the parenthesis its not a method
+// .At returns what's at that position .at(2)
+// New Methods
+
+// join() allows you to combine the terms of array into a string 
+// let arrayForString = ["A", "B", "C", "D"]
+// console.log(arrayForString.join(" gyatt ")) // inside of the parenthesis go in between the numbas
+
+// concat() slams two johns together combining arrays
+let mikesSons = ["Greg", "Peter", "Bobby"]
+let carolsDaughters = ["Marcia", "Jan", "Cindy"]
+
+console.log(mikesSons.concat(carolsDaughters))
+
+// Splice adds new items to an array
+// Slice removes items from an array
+
+let fruity = ["apple", "orange", "banana", "kiwi"]
+fruity.splice(2,0, "Mango", "Papaya")
+console.log(fruity)
+
+// splice(targetindex, remove, stufftobeadded)
+// use splice to delete items from the middle of an array
+
+// fruity.splice(3, 1)
+// console.log(fruity)
+
+// Slice returns a new array from a part of an original array
+
+let fruitsIHate = fruity.slice(1,5)
+console.log(fruitsIHate)
+
+// Strings are like arrays in a couple ways
+// "string".length mhm
+//
+let alpha = "abcdefghijklmnopqrstuvwxyz"
+
+console.log(alpha.charAt(2));
+console.log(alpha.at(7))  // .at allows negative indicies, while charAt doesn't
+
+// alpha[28] -> "undefined"
+// alpha.at(28) and alpha.charAt(28) -> ""
+
+// alpha[1] = "Q";
+// console.log(alpha)
+// 3 ways to move part of a string
+// slice(start, end)
+// substring(start, end) // values less than 0 are treated as 0
+// substr (start, length
+
+let testString = "The quick brown fox jumped over the lazy dog."
+
+let string1 = testString.slice(3,10)
+let string2 = testString.substring(3, 10)
+let string3 = testString.substr(3,10)
+
+console.log(string1)
+console.log(string2)
+console.log(string3
+
+// .toUpperCase
+// .toLowerCase you know what this does. goes on strings
+
