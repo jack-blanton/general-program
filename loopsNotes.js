@@ -208,8 +208,7 @@ let string3 = testString.substr(3,10)
 
 console.log(string1)
 console.log(string2)
-console.log(string3
+console.log(string3)
 
 // .toUpperCase
 // .toLowerCase you know what this does. goes on strings
-
