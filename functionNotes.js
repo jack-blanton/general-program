@@ -98,3 +98,4 @@ console.log(randomLessThan(4)+1)
 
 // if you want a function to interact with something else usually you'll need a return value!
  
+
